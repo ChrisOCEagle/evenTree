@@ -19,8 +19,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     }
   });
-  events.associate = function(models) {
-    events.belongsTo(models.Author, {
+  Events.associate = function(models) {
+    Events.belongsTo(models.Author, {
       foriegnKey: {
         allowNull: false
       }

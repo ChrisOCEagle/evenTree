@@ -22,7 +22,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
   Author.associate = function(models) {
-    Author.hasMany(models.events, {
+    Author.hasMany(models.Events, {
       onDelete: "CASCADE"
     });
   };
