@@ -20,7 +20,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
   Events.associate = function(models) {
-    Events.belongsTo(models.Author, {
+    Events.belongsTo(models.User, {
       foriegnKey: {
         allowNull: false
       }
