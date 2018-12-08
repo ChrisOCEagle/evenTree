@@ -36,4 +36,10 @@ module.exports = function(app) {
   app.get("/create", isAuthenticated, (req, res) => {
     res.render("create");
   });
+  // the post route that will post to the user table for the signup form
+  app.post("/members", (req, res) => {
+    db.User.create(req.body).then(dbUser => {
+      res.json(dbUser);
+    });
+  });
 };
