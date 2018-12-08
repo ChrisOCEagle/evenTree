@@ -1,5 +1,3 @@
-var db = require("../models");
-
 // require our custom middleware for determining if a user is logged in
 var isAuthenticated = require("../config/middleware/isAuthenticated.js");
 
@@ -35,11 +33,5 @@ module.exports = function(app) {
   // if a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/create", isAuthenticated, (req, res) => {
     res.render("create");
-  });
-  // the post route that will post to the user table for the signup form
-  app.post("/members", (req, res) => {
-    db.User.create(req.body).then(dbUser => {
-      res.json(dbUser);
-    });
   });
 };

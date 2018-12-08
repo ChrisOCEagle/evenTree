@@ -15,22 +15,22 @@
                 <h1 class="mb-5">Create an account</h1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <form id="create-user">
+                <form id="create-user" method="POST" action="/members">
                     <div class="form-group-email">
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
                             placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
                     <div class="form-group-username">
                         <label for="userName">Username</label>
-                        <input type="name" class="form-control" id="userName" aria-describedby="username"
+                        <input type="name" name="username" class="form-control" id="userName" aria-describedby="username"
                             placeholder="Enter username">
                         <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
                     <div class="form-group-password">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                     </div>
                     <div class="form-group-submit-btn">
                         <button type="submit" class="btn btn-primary">Create</button>
