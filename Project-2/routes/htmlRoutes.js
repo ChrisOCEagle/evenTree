@@ -45,15 +45,6 @@ module.exports = function(app) {
     }
     res.render("list");
   });
-  app.get("/", (req, res) => {
-    // if the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
-    }
-    res.render("event");
-  });
-
-  
   // the route for the members page
   // this route is authenticated by our authentication middleware
   // if a user who is not logged in tries to access this route they will be redirected to the signup page
