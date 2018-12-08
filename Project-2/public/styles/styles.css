@@ -18,6 +18,12 @@ h6 {
   font-weight: 700;
 }
 
+#navsign {
+  position: absolute;
+  top: 8.5px;
+  right: 151px;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
