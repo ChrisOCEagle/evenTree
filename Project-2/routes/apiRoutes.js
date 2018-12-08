@@ -7,9 +7,9 @@ module.exports = function(app) {
   // Otherwise the user will be sent an error
   app.post("/login", passport.authenticate("local"), function(req, res) {
     // Since we're doing a form POST, we can redirect that post into a GET request
-    // So we're sending the user back the route to the members page because the redirect will happen on the front end
-    // They won't get this or even be able to access this page if they aren't authed
-    res.json("/members");
+    // if the login is authenticated against the database, then the response will redirect
+    // the route to the members page.
+    res.redirect("/members");
   });
   // Route for signing up a user. The user's password is automatically hashed and stored securely
   // thanks to how we configured our Sequelize User model. If the user is created successfully,
