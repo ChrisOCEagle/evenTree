@@ -1,10 +1,10 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">EvenTree Icon</a>
-        <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
-      </div>
-    </nav>
+<nav class="navbar navbar-light bg-light static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">EvenTree Icon</a>
+    <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
+  </div>
+</nav>
 
     <!-- Masthead -->
     <header class="masthead text-white text-center">
@@ -12,228 +12,22 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">EvenTree</h1>
+            <h1 class="mb-5">evenTree</h1>
           </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto align" style="align-center">
-                    <form >
-              <div class="form-row" style="">
-                               <div class="col-12 col-md-3">
-                    <button type="button" class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#createModal">
-                       SignUp
-                       <i class="fa fa-paper-plane ml-1"></i>
-                    </button>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-3 mb-2 mb-md-0">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up</button>
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Login</button>
                 </div>
               </div>
             </form>
-            <hr>
-            <br>
-            <br>
-            <form>
-                <div class="form-row">
-                 
-                  <div class="col-12 col-md-3">
-                   
-                    <button type="button" class="btn btn-block btn-lg btn-warning btn" data-toggle="modal" data-target="#loginModal">
-                      Login
-                  </button>
-                    
-                  </div>
-                </div>
-              </form>
           </div>
         </div>
       </div>
     </header>
 
-    
-           <!--  ---------------------------------Sign Up MODAL2----------------------------------------------------    -->
 
-    <!-- Create Modal -->
-    <div class="modal fade" id="createModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-              <!-- Modal content-->
-      <div class="modal-content">
-          <div class="modal-header" style="padding:35px 50px;">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-          </div>
-          <div class="modal-body" style="padding:40px 50px;">
-            <form role="form">
-              <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                <input type="text" class="form-control" id="psw" placeholder="Enter password">
-              </div>
-              <div class="checkbox">
-                <label><input type="checkbox" value="" checked>Remember me</label>
-              </div>
-                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-            <p>Not a member? <a href="#">Sign Up</a></p>
-            <p>Forgot <a href="#">Password?</a></p>
-          </div>
-        </div>
-        
-      </div>
-    </div> 
-  </div>
-   
-  <script>
-  $(document).ready(function(){
-      $("#myBtn").click(function(){
-          $("#myModal").modal();
-      });
-  });
-  </script>
-
-
-           <!--  ---------------------------------LOGIN MODAL----------------------------------------------------    -->
-        <div class="modal fade" id="loginModal">
-             <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
-                  <div class="modal-content">
-                    <!--Header-->
-                    <div class="modal-header">
-                      <p class="heading lead">Enter Login Code To Sign Up
-                      </p>
-                
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="white-text">×</span>
-                      </button>
-                    </div>
-                
-                    <!--Body-->
-                    <div class="modal-body">
-                      <div class="text-center">
-                        <i class="fa fa-file-text-o fa-4x mb-3 animated rotateIn"></i>
-                        <p>
-                          <strong>Your opinion matters</strong>
-                        </p>
-                        <p>Have some ideas how to improve our product?
-                          <strong>Give us your feedback.</strong>
-                        </p>
-                      </div>
-                
-                      <hr>
-                
-                      
-                
-                      <p class="text-center">
-                        <strong>Enter Sign In Code</strong>
-                      </p>
-                      <!--Basic textarea-->
-                      <div class="md-form">
-                        <textarea type="text" id="form7textarea" class="md-textarea form-control" rows="3"></textarea>
-                        <label for="form7textarea">Code</label>
-                      </div>
-                
-                    </div>
-                
-                    <!--Footer-->
-                    <div class="modal-footer justify-content-center">
-                      <!-- <a type="button" class="btn btn-primary waves-effect waves-light">Send
-                        <i class="fa fa-paper-plane ml-1"></i>
-                      </a> -->
-                      <button type="button" class="btn btn-block btn-lg btn-warning btn" data-toggle="modal" data-target="#signUpModal">
-                            SignUp
-                            <i class="fa fa-paper-plane ml-1"></i>
-                        </button>
-
-
-                      <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
-                    </div>
-                  </div>
-                </div>
-
-                 <!--  ---------------------------------SIGNUP MODAL----------------------------------------------------    -->
-        <div class="modal fade" id="signUpModal">
-                <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
-                     <div class="modal-content">
-                       
-                       <!--Header-->
-                       <div class="modal-header text-white bg-primary">
-                         <p class="heading lead">What will you bring
-                         </p>
-                   
-                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                           <span aria-hidden="true" class="white-text">×</span>
-                         </button>
-                       </div>
-                   
-                       <!--Body-->
-                       <div class="modal-body">
-                         <div class="text-center">
-                           <i class="fa fa-file-text-o fa-4x mb-3 animated rotateIn"></i>
-                           <p>
-                             <strong>Your opinion matters</strong>
-                           </p>
-                           <p>Have some ideas how to improve our product?
-                             <strong>Give us your feedback.</strong>
-                           </p>
-                         </div>
-                   
-                         <hr>
-                   
-                         <!-- Radio -->
-                         <p class="text-center">
-                           <strong>Your rating</strong>
-                         </p>
-                         <div class="form-check mb-4">
-                           <input class="form-check-input" name="group1" type="radio" id="radio-17" value="option1" checked>
-                           <label class="form-check-label" for="radio-17">Very good</label>
-                         </div>
-                   
-                         <div class="form-check mb-4">
-                           <input class="form-check-input" name="group1" type="radio" id="radio-27" value="option2">
-                           <label class="form-check-label" for="radio-27">Good</label>
-                         </div>
-                   
-                         <div class="form-check mb-4">
-                           <input class="form-check-input" name="group1" type="radio" id="radio-37" value="option3">
-                           <label class="form-check-label" for="radio-37">Mediocre</label>
-                         </div>
-                         <div class="form-check mb-4">
-                           <input class="form-check-input" name="group1" type="radio" id="radio-47" value="option4">
-                           <label class="form-check-label" for="radio-47">Bad</label>
-                         </div>
-                         <div class="form-check mb-4">
-                           <input class="form-check-input" name="group1" type="radio" id="radio-57" value="option5">
-                           <label class="form-check-label" for="radio-57">Very bad</label>
-                         </div>
-                         <!-- Radio -->
-                   
-                         <p class="text-center">
-                           <strong>What could we improve?</strong>
-                         </p>
-                         <!--Basic textarea-->
-                         <div class="md-form">
-                           <textarea type="text" id="form7textarea" class="md-textarea form-control" rows="3"></textarea>
-                           <label for="form7textarea">Your message</label>
-                         </div>
-                   
-                       </div>
-                   
-                       <!--Footer-->
-                       <div class="modal-footer justify-content-center">
-                         <a type="button" class="btn btn-primary waves-effect waves-light">Send
-                           <i class="fa fa-paper-plane ml-1"></i>
-                         </a>
-                         <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
-                       </div>
-                     </div>
-                   </div>
-   
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
