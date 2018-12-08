@@ -34,7 +34,8 @@ module.exports = function(sequelize, DataTypes) {
   };
   // before a user is created we will automatically hash their password
   User.hook("beforeCreate", function(user) {
-    user.password = bcrypt.hashSync(user.password,
+    user.password = bcrypt.hashSync(
+      user.password,
       bcrypt.genSaltSync(10),
       null
     );
