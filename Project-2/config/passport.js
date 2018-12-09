@@ -10,7 +10,7 @@ var db = require("../models");
 // want to have a login with a username, email, and password
 passport.use(
   new LocalStrategy(
-    // our user will sign in using a username and an email
+    // our user will sign in using an email
     {
       usernameField: "email"
     },
@@ -22,7 +22,7 @@ passport.use(
         }
       }).then(function(dbUser) {
         // if there is no user with the given email
-        if (!dbUser) {
+        if (!dbUser.dataValues.email) {
           return done(null, false, { message: "Incorrect Email" });
         }
         // if there is a user with the given email, but the given password is incorrect
@@ -30,7 +30,7 @@ passport.use(
           return done(null, false, { message: "Incorrect Password" });
         }
         // if none of the above return the User
-        return done(null, dbUser);
+        return done(null, dbUser.dataValues);
       });
     }
   )
