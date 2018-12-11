@@ -19,9 +19,75 @@ h6 {
 }
 
 #navsign {
+  background-color: #16a858; 
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
   position: absolute;
   top: 8.5px;
-  right: 151px;
+  right: 90px;
+}
+
+#navlogin {
+  background-color: #16a858; 
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 8.5px;
+  right: 16px;
+}
+
+#signupImg {
+  position: relative;
+  background-color: #343a40;
+  background: url("/img/signupImg.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+}
+
+#logImg {
+  position: relative;
+  background-color: #343a40;
+  background: url("/img/logImg.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+#memImg {
+  position: relative;
+  background-color: #343a40;
+  background: url("/img/memImg.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#subBtn {
+  background-color: #16a858; 
+  border: none;
+}
+
+nav.navbar {
+  height: 59px;
+}
+
+.navbar-brand {
+  margin-right: 0rem;
 }
 
 header.masthead {
@@ -131,3 +197,5 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+

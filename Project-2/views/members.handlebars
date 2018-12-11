@@ -1,13 +1,16 @@
 <!-- Navigation -->
 <nav class="navbar navbar-light bg-light static-top">
   <div class="container">
-    <a class="navbar-brand" href="/">evenTree</a>
-    <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
+    <a class="navbar-brand" href="/">
+      <img src="/img/eventree2.png" height="75" width="75"> </div>
+  </a>
+  <a href="/signup" class="btn btn-primary" id="navsign">Sign Up</a>
+  <a href="/login" class="btn btn-primary" id="navlogin">Login</a>
   </div>
 </nav>
 
 <!-- Masthead -->
-<header class="masthead text-black text-center">
+<header class="masthead text-white text-center" id="memImg">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -17,79 +20,24 @@
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
         <form id="event-creator" action="/api/events" method="POST">
           <div class="form-group">
-            <label for="name">Name</label>
             <input type="name" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
-            <label for="description">Description</label>
             <input type="description" name="description" class="form-control" id="description" placeholder="Description">
           </div>
           <div class="form-group">
-            <label for="date">Date</label>
             <input type="date" name="date" class="form-control" id="date" placeholder="Date">
           </div>
           <div class="form-group">
-            <label for="location">Location</label>
             <input type="location" name="location" class="form-control" id="location" placeholder="Location">
           </div>
-           <div class="form-group">
-            <label for="item">Item</label>
+          <div class="form-group">
             <input type="item" name="items" class="form-control" id="item" placeholder="Item">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" id="subBtn">Submit</button>
         </form>
       </div>
     </div>
   </div>
 </header>
-
-<br>
-
-<!-- Footer -->
-<footer class="footer bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item">
-            <a href="#">About</a>
-          </li>
-          <li class="list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#">Contact</a>
-          </li>
-          <li class="list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#">Terms of Use</a>
-          </li>
-          <li class="list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#">Privacy Policy</a>
-          </li>
-        </ul>
-        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
-      </div>
-      <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item mr-3">
-            <a href="#">
-              <i class="fab fa-facebook fa-2x fa-fw"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mr-3">
-            <a href="#">
-              <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fab fa-instagram fa-2x fa-fw"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
