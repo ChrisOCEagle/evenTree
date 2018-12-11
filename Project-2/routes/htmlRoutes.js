@@ -38,11 +38,17 @@ module.exports = function(app) {
       res.render("list", { events: dbEvents });
     });
   });
+  // the route for creating an event
+  // this route is authenticated by our authentication middleware
+  // if a user who is not logged in tries to access this route they will be redirected to the signup page
+  app.get("/create", (req, res) => {
+    res.render("create");
+  });
   // the route for the created event
   // this route is authenticated by our authentication middleware
   // if a user who is not logged in tries to access this route they will be redirected to the signup page
-  app.get("/event", (req, res) => {
-    db.Events.findOne({ where: { id: 1 } }).then(dbEvent => {
+  app.get("/event/:id", (req, res) => {
+    db.Events.findOne({ where: { id: req.params.id } }).then(dbEvent => {
       console.log(dbEvent.dataValues);
       res.render("event", {
         event: {

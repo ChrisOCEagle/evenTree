@@ -21,9 +21,9 @@
           {{#each events}}
           <li>
             <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary active">
+              <label class="btn btn-primary active btn-choice">
                 {{name}}
-                <input type="radio" name="{{name}}" id="{{id}}" unchecked autocomplete="off">
+                <input type="radio" data-name="{{name}}" data-id="event-selector-{{id}}" unchecked autocomplete="off">
               </label>
             </div>
           </li>
