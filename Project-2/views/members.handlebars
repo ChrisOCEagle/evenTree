@@ -15,28 +15,11 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-9 mx-auto">
-        <h1 class="mb-5">Create an Event</h1>
+        <h1 class="mb-5">Welcome! (Insert logged in username)</h1>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form id="event-creator" action="/api/events" method="POST">
-          <div class="form-group">
-            <input type="name" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
-            <small id="emailHelp" class="form-text text-muted"></small>
-          </div>
-          <div class="form-group">
-            <input type="description" name="description" class="form-control" id="description" placeholder="Description">
-          </div>
-          <div class="form-group">
-            <input type="date" name="date" class="form-control" id="date" placeholder="Date">
-          </div>
-          <div class="form-group">
-            <input type="location" name="location" class="form-control" id="location" placeholder="Location">
-          </div>
-          <div class="form-group">
-            <input type="item" name="items" class="form-control" id="item" placeholder="Item">
-          </div>
-          <button type="submit" class="btn btn-primary" id="subBtn">Submit</button>
-        </form>
+        <a href="/events" class="btn btn-primary" id="event-selector">Select an Event</a>
+        <a href="/create" class="btn btn-primary" id="event-creator">Create an Event</a>
       </div>
     </div>
   </div>
