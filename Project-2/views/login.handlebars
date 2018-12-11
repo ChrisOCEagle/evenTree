@@ -1,82 +1,35 @@
 <!-- Navigation -->
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-        <a class="navbar-brand" href="/">evenTree</a>
-        <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
+        <a class="navbar-brand" href="/">
+            <img src="/img/eventree2.png" height="75" width="75"> </div>
+    </a>
+    <a href="/signup" class="btn btn-primary" id="navsign">Sign Up</a>
+    <a href="/login" class="btn btn-primary" id="navlogin">Login</a>
     </div>
 </nav>
 
 <!-- Masthead -->
-<header class="masthead text-white text-center">
+<header class="masthead text-white" id="logImg">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-xl-9 mx-auto">
+            <div class="col-xl-9 mx-auto text-center">
                 <h1 class="mb-5">Account Login</h1>
             </div>
-            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <div class="col-md-10 col-lg-8 col-xl-4 mx-auto">
                 <form id="login-user" action="/api/login" method="POST">
                     <div class="form-group-email">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control" id="email" aria-describedby="username" placeholder="someone@email.com">
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="username"
+                            placeholder="Username">
                         <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
                     <div class="form-group-password">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" placeholder="P@ssw0rd">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                    </div><br>
+                    <button type="submit" class="btn btn-primary" id="subBtn">Submit</button>
                 </form>
             </div>
         </div>
     </div>
 </header>
-
-<br>
-
-<!-- Footer -->
-<footer class="footer bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-                <ul class="list-inline mb-2">
-                    <li class="list-inline-item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Terms of Use</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
-            </div>
-            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item mr-3">
-                        <a href="#">
-                            <i class="fab fa-facebook fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-3">
-                        <a href="#">
-                            <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fab fa-instagram fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
