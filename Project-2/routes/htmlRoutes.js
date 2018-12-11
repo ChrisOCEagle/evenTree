@@ -1,3 +1,5 @@
+// require the models
+var db = require("../models");
 // require our custom middleware for determining if a user is logged in
 var isAuthenticated = require("../config/middleware/isAuthenticated.js");
 
@@ -25,13 +27,15 @@ module.exports = function(app) {
   // the route for the members page
   // this route is authenticated by our authentication middleware
   // if a user who is not logged in tries to access this route they will be redirected to the signup page
-  app.get("/members", isAuthenticated, (req, res) => {
+  app.get("/members", (req, res) => {
     res.render("members");
   });
-  // the route for the event creator page
+  // the route for the list of events page
   // this route is authenticated by our authentication middleware
   // if a user who is not logged in tries to access this route they will be redirected to the signup page
-  app.get("/create", isAuthenticated, (req, res) => {
-    res.render("create");
+  app.get("/events", (req, res) => {
+    db.Events.findAll().then(dbEvents => {
+      res.render("list", { events: dbEvents });
+    });
   });
 };

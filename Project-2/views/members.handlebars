@@ -15,27 +15,27 @@
         <h1 class="mb-5">Create an Event</h1>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form>
+        <form id="event-creator" action="/api/events" method="POST">
           <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="email" class="form-control" id="example1" aria-describedby="emailHelp" placeholder="Name">
+            <label for="name">Name</label>
+            <input type="name" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Description</label>
-            <input type="password" class="form-control" id="example2" placeholder="Description">
+            <label for="description">Description</label>
+            <input type="description" name="description" class="form-control" id="description" placeholder="Description">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Date</label>
-            <input type="password" class="form-control" id="example3" placeholder="Date">
+            <label for="date">Date</label>
+            <input type="date" name="date" class="form-control" id="date" placeholder="Date">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Location</label>
-            <input type="password" class="form-control" id="example4" placeholder="Location">
+            <label for="location">Location</label>
+            <input type="location" name="location" class="form-control" id="location" placeholder="Location">
           </div>
            <div class="form-group">
-            <label for="exampleInputPassword1">Item</label>
-            <input type="password" class="form-control" id="example5" placeholder="Item">
+            <label for="item">Item</label>
+            <input type="item" name="items" class="form-control" id="item" placeholder="Item">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
