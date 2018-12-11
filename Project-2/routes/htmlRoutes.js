@@ -34,8 +34,25 @@ module.exports = function(app) {
   // this route is authenticated by our authentication middleware
   // if a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/events", (req, res) => {
-    db.Events.findAll().then(dbEvents => {
+    db.Events.findAll({}).then(dbEvents => {
       res.render("list", { events: dbEvents });
+    });
+  });
+  // the route for the created event
+  // this route is authenticated by our authentication middleware
+  // if a user who is not logged in tries to access this route they will be redirected to the signup page
+  app.get("/event", (req, res) => {
+    db.Events.findOne({ where: { id: 1 } }).then(dbEvent => {
+      console.log(dbEvent.dataValues);
+      res.render("event", {
+        event: {
+          name: dbEvent.dataValues.name,
+          description: dbEvent.dataValues.description,
+          date: dbEvent.dataValues.date,
+          location: dbEvent.dataValues.location,
+          items: dbEvent.dataValues.items.split(",")
+        }
+      });
     });
   });
 };

@@ -14,6 +14,22 @@
             <h1 class="mb-5">Event Page</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+              <div class="card text-left">
+                <img class="card-img-top" src="../public/img/bg-masthead.jpg" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="event-name">{{name}}</h4>
+                  <p class="card-text" id="event-description">{{description}}</p>
+                  <p class="card-text" id="event-date">{{date}}</p>
+                  <p class="class-text" id="event-location">{{location}}</p>
+                  {{#each items}}
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="checkbox" name="event-item" id="event-item" checked autocomplete="off">
+                      </label>
+                    </div>
+                  {{/each}}
+                </div>
+              </div>
           </div>
         </div>
       </div>
