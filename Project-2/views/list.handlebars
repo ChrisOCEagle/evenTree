@@ -14,6 +14,18 @@
             <h1 class="mb-5">Event List</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <ul>
+              {{#each events}}
+                <li>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      {{name}}
+                      <input type="radio" name="{{name}}" id="{{id}}" unchecked autocomplete="off">
+                    </label>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
           </div>
         </div>
       </div>
